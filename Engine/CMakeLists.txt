@@ -4,10 +4,10 @@ project(vnengine)
 set(CMAKE_CXX_STANDARD 14)
 
 
-FILE(GLOB SOURCES "src/*.cpp")
-FILE(GLOB HEADERS "include/*.hpp")
+FILE(GLOB SOURCES "src/Core/*.cpp")
+FILE(GLOB HEADERS "include/Core/*.h")
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES} src/main.cpp ${HEADERS})
 
 
 

@@ -5,8 +5,8 @@
       <config projectName="vnengine" targetName="vnengine" />
       <config projectName="vnengine" targetName="NightlyStart" />
       <config projectName="vnengine" targetName="NightlyMemoryCheck" />
-      <config projectName="vnengine" targetName="ContinuousMemCheck" />
       <config projectName="vnengine" targetName="ContinuousSubmit" />
+      <config projectName="vnengine" targetName="ContinuousMemCheck" />
       <config projectName="vnengine" targetName="ContinuousTest" />
       <config projectName="vnengine" targetName="NightlyTest" />
       <config projectName="vnengine" targetName="ContinuousCoverage" />
@@ -20,8 +20,8 @@
       <config projectName="vnengine" targetName="ExperimentalUpdate" />
       <config projectName="vnengine" targetName="Nightly" />
       <config projectName="vnengine" targetName="NightlySubmit" />
-      <config projectName="vnengine" targetName="ExperimentalStart" />
       <config projectName="vnengine" targetName="ExperimentalSubmit" />
+      <config projectName="vnengine" targetName="ExperimentalStart" />
       <config projectName="vnengine" targetName="Continuous" />
       <config projectName="vnengine" targetName="NightlyConfigure" />
       <config projectName="vnengine" targetName="ContinuousBuild" />
@@ -40,19 +40,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c9d98f-fcdd-48c5-a0f6-9d5f320f0507" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Engine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/Loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Loader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Core/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Input/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Input/Input.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Render/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Render/Renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/tests/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thirdparty/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/thirdparty/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thirdparty/Catch/catch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/thirdparty/Catch/catch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/src/Core/Engine.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/src/Core/Window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/include/Core/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/include/Core/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,7 +86,7 @@
       <recent name="C:\Users\Roman\projects\vnengine\src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.ContinuousBuild">
+  <component name="RunManager" selected="CMake Application.vnengine">
     <configuration name="Continuous" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vnengine" TARGET_NAME="Continuous" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -293,7 +288,8 @@
       <updated>1577216598298</updated>
       <workItem from="1577216599640" duration="483000" />
       <workItem from="1577255870697" duration="4664000" />
-      <workItem from="1577267025036" duration="1719000" />
+      <workItem from="1577267025036" duration="3543000" />
+      <workItem from="1577288702795" duration="2242000" />
     </task>
     <servers />
   </component>
@@ -301,30 +297,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1577290789239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577290789239" />
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1577269494913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577269494913" />
     <state x="835" y="251" key="FileChooserDialogImpl" timestamp="1577256646540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="835" y="251" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577256646540" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577265091173">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577290895426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577265091173" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577265091171">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577290895426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577265091171" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577265091170">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577290895426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577265091169" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577265091171">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577290895426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577265091171" />
-    <state x="556" y="147" key="SettingsEditor" timestamp="1577256649118">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
+    <state x="556" y="147" key="SettingsEditor" timestamp="1577288745563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="147" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577256649118" />
+    <state x="556" y="147" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577288745563" />
     <state x="655" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1577256044998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
