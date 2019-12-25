@@ -5,6 +5,9 @@
 #include "../../include/Core/Engine.h"
 
 VNEngine::Game::Game() {
+    // init logger
+    plog::init(plog::debug, "debug.log");
+
     // setting up window properties
     WindowProperties windowProperties = {
             1280,
@@ -13,6 +16,8 @@ VNEngine::Game::Game() {
 
     // creating window
     window = new Window(windowProperties);
+
+    PLOG_DEBUG << "Window created";
 }
 
 VNEngine::Game::~Game() {

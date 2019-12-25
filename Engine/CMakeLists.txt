@@ -10,11 +10,11 @@ FILE(GLOB HEADERS "include/*/*.h")
 add_executable(${PROJECT_NAME} ${SOURCES} src/main.cpp ${HEADERS})
 
 include(CTest)
+enable_testing()
 add_subdirectory(tests)
-add_subdirectory(thirdparty)
+include_directories(thirdparty/plog/include)
 
 set(TEST_SOURCES tests/*.cpp)
-
 
 
 set(SFML_STATIC_LIBRARIES TRUE)

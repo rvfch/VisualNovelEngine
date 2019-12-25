@@ -7,6 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Window.h"
+#include "plog/Log.h"
 
 namespace VNEngine {
     class Game {

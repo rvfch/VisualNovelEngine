@@ -6,7 +6,13 @@
 #define VNENGINE_INPUT_H
 
 namespace VNEngine {
+    class Mouse {
 
+    };
+
+    class Keyboard {
+
+    };
 }
 
 #endif //VNENGINE_INPUT_H
