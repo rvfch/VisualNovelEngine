@@ -4,12 +4,10 @@ project(vnengine)
 set(CMAKE_CXX_STANDARD 14)
 
 
-FILE(GLOB SOURCES "src/Core/*.cpp")
-FILE(GLOB HEADERS "include/Core/*.h")
+FILE(GLOB SOURCES "src/*/*.cpp")
+FILE(GLOB HEADERS "include/*/*.h")
 
 add_executable(${PROJECT_NAME} ${SOURCES} src/main.cpp ${HEADERS})
-
-
 
 include(CTest)
 add_subdirectory(tests)

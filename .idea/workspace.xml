@@ -40,14 +40,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c9d98f-fcdd-48c5-a0f6-9d5f320f0507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Engine/src/Core/Engine.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/src/Core/Window.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/MenuState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/PauseState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/PlayState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/SettingsState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/State.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/include/States/StateManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/include/Core/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Engine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/include/Core/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Core/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/include/Input/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/include/Input/Input.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VRWsy2xKVbC3ipUjujtBLLTTGX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -289,7 +292,7 @@
       <workItem from="1577216599640" duration="483000" />
       <workItem from="1577255870697" duration="4664000" />
       <workItem from="1577267025036" duration="3543000" />
-      <workItem from="1577288702795" duration="2242000" />
+      <workItem from="1577288702795" duration="4227000" />
     </task>
     <servers />
   </component>
@@ -309,22 +312,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="835" y="251" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577256646540" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577290895426">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577292738314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577290895426">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577292738314" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577292738314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577290895426">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577292738314" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577292738314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577290895426">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577292738314" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577292738314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577290895426" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577292738314" />
     <state x="556" y="147" key="SettingsEditor" timestamp="1577288745563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

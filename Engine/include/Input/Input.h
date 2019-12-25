@@ -5,4 +5,8 @@
 #ifndef VNENGINE_INPUT_H
 #define VNENGINE_INPUT_H
 
+namespace VNEngine {
+
+}
+
 #endif //VNENGINE_INPUT_H
