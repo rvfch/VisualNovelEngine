@@ -5,11 +5,19 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 FILE(GLOB SOURCES "src/*.cpp")
-
-add_executable(${PROJECT_NAME} ${SOURCES})
-
 FILE(GLOB HEADERS "include/*.hpp")
-add_custom_target(headers SOURCES ${HEADERS})
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+
+
+
+include(CTest)
+add_subdirectory(tests)
+add_subdirectory(thirdparty)
+
+set(TEST_SOURCES tests/*.cpp)
+
+
 
 set(SFML_STATIC_LIBRARIES TRUE)
 set(SFML_DIR "C:/SFML-2.5.1/lib/cmake/SFML")
